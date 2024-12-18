@@ -14,7 +14,7 @@ function Navbar() {
         <Link href="/Home" >home</Link>
         <Link href="/Shop">Shop</Link>
         <Link href="/cart">Cart</Link>
-        <Link href="/Contect">Contect</Link>
+        <Link href="/Contact">Contact</Link>
       </div>
       <div className=" ">
         <AiOutlineAlignLeft className="text-[30px]  md:hidden"/>

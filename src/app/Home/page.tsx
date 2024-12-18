@@ -17,8 +17,8 @@ import Imagepng from "../../../public/Rectangle 17.png";
 function Hero() {
   return (
     <div className="flex flex-col">
-      <div className="w-[1440px]  bg-[#FBEBB5] flex items-center justify-between xs:w-full xs:flex-col xs:justify-between md:w-full md:flex-row md:justify-evenly">
-        <h1 className="w-[490px]  font-poppin text-[64px] leading-[96px] pt-[40px] ml-[202px] xs:w-full xs:items-center xs:justify-center xs:text-4xl xs:m-2 xs:px-6 xs:text md:text-8xl  ">
+      <div className="w-[1440px] h-[900px] bg-[#FBEBB5] flex items-center justify-between xs:w-full xs:h-auto xs:flex-col xs:justify-between md:w-full md:h-au md:flex-row md:justify-evenly">
+        <h1 className="w-[440px] h-[276px]  font-poppin text-[64px] leading-[96px] pt-[40px] ml-[202px]   xs:text-6xl xs:m-2 xs:px-6 xs:text md:w-auto md:text-6xl  ">
           Rocket single seater
           <p className="font-Poppin text-[24px] leading-[36px] pt-[10px] underline xs:text-lg">
             Shop Now
