@@ -20,33 +20,33 @@ import Reclaim from "../../../public/Reclaimed teak coffee table 1.png";
 
 function page() {
   return (
-    <div className=" xs:w-full md:w-full ">
+    <div className="">
       <Image
         src={Bg}
         alt="Imagepng"
-        className="w-[1440] h-[316px] bg-cover bg-center  absolute xs:w-full "
+        className="w-[1440] h-[316px] bg-cover bg-center   absolute xl:w-[2000px]"
       />
 
-      <div className="w-[1440] h-[316px] relative flex flex-col mr-[420px] items-center justify-center xs:w-full">
-        <div>
+      <div className="w-[1440] h-[316px] relative flex flex-col  items-center justify-center  ">
+        
           <Image src={Marbel} alt="Imagepng" className="" />
-        </div>
-        <div className="">
+    
+        
           <h1 className="font-Poppin text-[48px] leading-[72px] text-black">
             Shop
           </h1>
-        </div>
-        <div>
+       
+        
           <h1 className="font-Poppin text-[16px] leading-[24px] text-black">
             Home - <span> Shop</span>
           </h1>
-        </div>
+       
       </div>
 
       {/* sub nev bar */}
 
-      <div className="w-[1440px] h-[100px] bg-[#FAF4F4] xs:hidden md:w-full md:flex">
-        <div className="flex items-center justify-around  ">
+      <div className="w-full bg-[#FAF4F4] hidden  md:flex ">
+        <div className="flex items-center justify-around ">
           <div className="flex items-center gap-[10px] py-[35px] px-[60px] ">
             <Image src={Filter} alt="Imagepng" className="" />
             <h1 className="font-Poppin">Filter</h1>
@@ -78,8 +78,8 @@ function page() {
 
       {/* Main page shop */}
 
-      <div className="w-[1440px] h-auto px-[30px] py-[60px] xs:w-full">
-        <div className=" flex items-center flex-wrap justify-between  gap-[60px] xs:w-full xs:flex-col sm:w-full sm:flex-row sm:flex-wrap md:w-full  md:justify-between">
+      <div className=" px-[30px] py-[60px] ">
+        <div className=" flex items-center flex-wrap justify-between  gap-[60px]  xs:flex-col  sm:flex-row sm:flex-wrap md:justify-between">
           <div className="w-[287px] h-[287px]">
             <Image src={Trentan} alt="Table" />
             <div className="w-[194px] flex flex-col">
@@ -173,7 +173,7 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[60px] flex items-center justify-center gap-[30px] mt-[30px] xs:w-full md:w-full">
+        <div className=" flex items-center justify-center gap-[30px] mt-[30px] xs:w-full md:w-full">
           <div className="w-[60px] h-[60px]  text-black text-center bg-[#FBEBB5] rounded-[10px] py-[20px]">
             1
           </div>

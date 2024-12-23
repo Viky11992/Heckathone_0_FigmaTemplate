@@ -2,58 +2,59 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-[1440px] pt-[60px]  px-[60px] xs:w-full ">
-      <div className="w-[1131px] h-[312px] flex items-center  justify-around gap-[90px] xs:w-full xs:gap-0">
-        <div className="w-[285px] h-[72px] xs:hidden lg:flex">
+    <div className=" pt-[60px]   bg-green-700 ">
+      <div className=" flex items-center  justify-evenly ">
+        <div className="w-full max-w-[25%] xs:hidden lg:flex xs:text-[10px] md:text-base">
           400 University Drive Suite 200 Coral Gables, FL 33134 USA
         </div>
-        <div className="w-[710px] h-[312px] flex  justify-between gap-[120px] xs:w-full">
-          <div className="w-[68px] h-[312px] flex flex-col gap-[30px] list-none">
-            <li className="font-[500] text-[16px] leading-[24px] text-[#9F9F9F]">
+        <div className="w-full max-w-[25%] flex  justify-between">
+          <div className=" flex flex-col gap-[30px] list-none xs:text-[10px] md:text-base font-[500] text-base text-[#000000]">
+            <li className="font-[500] text-base text-[#9F9F9F] xs:text-[10px] md:text-base">
               links
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className="">
               Home
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className="">
               shop
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className=" ">
               About
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className=" ">
               Contact
             </li>
           </div>
-          <div className="w-[140px] h-[242px] flex flex-col gap-[30px] list-none">
-            <li className="font-[500] text-[16px] leading-[24px] text-[#9F9F9F]">
+          <div className="w-full max-w-[25%] flex flex-col gap-[30px] list-none font-[500] text-base xs:text-[10px] md:text-base text-[#000000]">
+            <li className="font-[500] text-base text-[#9F9F9F] ">
               Help
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className=" ">
               Payment Options
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className=" ">
               Payment Options
             </li>
-            <li className="font-[500] text-[16px] leading-[24px] text-[#000000]">
+            <li className=" ">
               Privacy Policies
             </li>
           </div>
-          <div className="w-[286px] h-[101px] flex flex-col justify-between gap-[10px] ">
-            <p className="font-[500] text-[16px] leading-[24px] text-[#9F9F9F]">
+          <div className="w-full max-w-[25%] flex flex-col justify-start gap-[10px] ">
+            <p className=" text-[#9F9F9F]">
               Newsletter
             </p>
-            <p className="font-[400] text-[14px] leading-[21px] text-[##9F9F9F] underline">
+            <p className="font-normal text-sm text-[##9F9F9F] underline xs:text-[10px] md:text-base  mt-6">
               Enter Your Email Address{" "}
-              <span className="font-[500] underline text-[14px] leading-[21px] text-[#000000]">
+              
+            </p>
+            <span className="font-[500] underline text-sm text-[#000000] xs:text-[10px] md:text-base">
                 {" "}
                 SUBSCRIBE
               </span>
-            </p>
           </div>
         </div>
       </div>
-      <p className="font-[400] text-[16px] leading-[24px] text-[#000000]">
+      <p className="font-normal text-base ml-[16%] text-[#000000] xs:text-[10px] md:text-base">
         2022 Meubel House. All rights reverved
       </p>
     </div>

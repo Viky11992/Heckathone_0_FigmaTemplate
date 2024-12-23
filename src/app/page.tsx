@@ -7,7 +7,7 @@ import Home from './Home/page'
 
 function page() {
   return (
-    <div>
+    <div className=''>
       <Home />
     </div>
  

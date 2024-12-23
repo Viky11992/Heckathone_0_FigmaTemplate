@@ -13,88 +13,83 @@ import Group37 from "../../../public/Group 37.png";
 import Rectangle14 from "../../../public/Rectangle 14 (2).png";
 import Rectangle15 from "../../../public/Rectangle 15 (2).png";
 import Imagepng from "../../../public/Rectangle 17.png";
-
+// w-[1440px] h-[900px]
 function Hero() {
   return (
-    <div className="flex flex-col">
-      <div className="w-[1440px] h-[900px] bg-[#FBEBB5] flex items-center justify-between xs:w-full xs:h-auto xs:flex-col xs:justify-between md:w-full md:h-au md:flex-row md:justify-evenly">
-        <h1 className="w-[440px] h-[276px]  font-poppin text-[64px] leading-[96px] pt-[40px] ml-[202px]   xs:text-6xl xs:m-2 xs:px-6 xs:text md:w-auto md:text-6xl  ">
-          Rocket single seater
-          <p className="font-Poppin text-[24px] leading-[36px] pt-[10px] underline xs:text-lg">
+    <div className="flex flex-col  ">
+      <div className="bg-[#FBEBB5] flex items-center  xs:flex-col xs:justify-around md:flex-row md:justify-evenly">
+        <div className="  bg-green-400">
+          <h1 className="font-poppin text-4xl xs:text-2xl md:text-4xl lg:text-6xl leading-[1.2]">
+            Rocket Single <br /> Seater
+          </h1>
+          <p className="font-poppin text-lg xs:text-base underline pt-2">
             Shop Now
           </p>
-        </h1>
+        </div>
 
-        <div>
-          <Image src={Sofa} alt="" className="" />
+        <div className="flex items-center justify-center xs:w-[70%] md:w-[50%] lg:w-auto">
+          <Image src={Sofa} alt="Sofa" className="w-full " />
         </div>
       </div>
 
       {/* table element */}
 
-      <div className="w-[1440px]   h-[672px] flex justify-around gap-[60px] pl-[70px] m-auto bg-[#FAF4F4] xs:w-full  xs:flex-col  xs:h-auto xs:pl-0 xs:pt-10  md:flex-row md:w-full     ">
-        <Image src={Group9} alt="Table" className="" />
-
-        <Image src={Group8} alt="Table" className="" />
+      <div className="flex flex-col md:flex-row justify-around items-center gap-6 bg-[#FAF4F4] p-4">
+        <Image src={Group9} alt="Table" className="w-full max-w-[300px]" />
+        <Image src={Group8} alt="Table" className="w-full max-w-[300px]" />
       </div>
 
       {/* top pics for you */}
 
-      <div className="w-[1440px] h-auto flex flex-col items-center justify-evenly xs:w-full sm:w-full ">
-        <div>
-          <h1 className="font-Poppin text-[36px] leading-[54px] text-center xs:w-full ">
-            Top Picks For You
-            <p className="font-Poppin text-[16px] leading-[24px] text-center text-[#9F9F9F] xs:px-6">
-              Find a bright ideal to suit your taste with our great selection of
-              suspension, floor and table lights.
-            </p>
-          </h1>
-        </div>
+      <div className=" flex flex-col items-center">
+        <h1 className="font-poppin text-2xl md:text-3xl text-center">
+          Top Picks For You
+          <p className="font-poppin text-sm md:text-base text-center text-[#9F9F9F] mt-2 px-4">
+            Find a bright ideal to suit your taste with our great selection of
+            suspension, floor and table lights.
+          </p>
+        </h1>
 
-        <div className="flex items-center px-5 justify-between gap-[80px] xs:w-full xs:flex-col xs:flex-grow-1 sm:w-full sm:flex-row sm:flex-wrap sm:flex-grow-0 xs:h-auto">
-          <div className="">
-            <Image src={Trentan} alt="Table" />
-            <div className="w-[194px] flex flex-col">
-              <h1 className="font-Poppin text-[16px] leading-[24px] text-[#000000]">
-                Trenton modular sofa_3
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px]">
-                Rs. 25,000.00
-              </p>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+          <div className="flex flex-col items-center">
+            <Image
+              src={Trentan}
+              alt="Trenton modular sofa"
+              className="w-full max-w-[300px]"
+            />
+
+            <h1 className="font-poppin text-base mt-2">
+              Trenton modular sofa_3
+            </h1>
+            <p className="font-poppin text-lg">Rs. 25,000.00</p>
           </div>
-          <div className="">
-            <Image src={Granite} alt="Table" />
-            <div className="w-[212px]   flex flex-col">
-              <h1 className="font-Poppin text-[16px] leading-[24px] text-[#000000]">
-                Granite dining table with dining chair
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px]">
-                Rs. 25,000.00
-              </p>
-            </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src={Granite}
+              alt="Granite"
+              className="w-full max-w-[300px]"
+            />
+
+            <h1 className="font-poppin text-base mt-2">
+              Granite dining table with dining chair
+            </h1>
+            <p className="font-poppin text-lg">Rs. 25,000.00</p>
           </div>
-          <div className=" ">
-            <Image src={Musk} alt="Table" />
-            <div className="w-[212px] flex flex-col">
-              <h1 className="font-Poppin text-[16px] leading-[24px] text-[#000000]">
-                Outdoor bar table and stool
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px]">
-                Rs. 25,000.00
-              </p>
-            </div>
+          <div className="flex flex-col items-center">
+            <Image src={Musk} alt="Musk" className="w-full max-w-[300px]" />
+
+            <h1 className="font-poppin text-base mt-2">
+              Outdoor bar table and stool
+            </h1>
+            <p className="font-poppin text-lg">Rs. 25,000.00</p>
           </div>
-          <div className=" ">
-            <Image src={Musk1} alt="Table" />
-            <div className="w-[199px]  flex flex-col">
-              <h1 className="font-Poppin text-[16px] leading-[24px] text-[#000000]">
-                Plain console with teak mirror
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px]">
-                Rs. 25,000.00
-              </p>
-            </div>
+          <div className="flex flex-col items-center">
+            <Image src={Musk1} alt="Musk" className="w-full max-w-[300px]" />
+
+            <h1 className="font-poppin text-base mt-2">
+              Plain console with teak mirror
+            </h1>
+            <p className="font-poppin text-lg">Rs. 25,000.00</p>
           </div>
         </div>
 
@@ -105,103 +100,101 @@ function Hero() {
 
       {/* asgaard sofa */}
 
-      <div className="w-[1440px] h-[700px] flex items-center justify-evenly bg-[#FFF9E5] xs:w-full xs:flex-col-reverse md:flex-row">
-        <Image src={AsguardSofa} alt="AsguardSofa" className="" />
-        <div className="w-[331px] h-[205px] flex flex-col items-center justify-between">
-          <p className="font-Poppin text-[24px] leading-[36px] text-[#000000]">
-            New Arrivals
-          </p>
-          <h1 className="font-Poppin text-[48px] leading-[72px] text-[#000000]">
-            Asgaard sofa
-          </h1>
-          <div className="w-[255px] h-[64px] border border-black flex items-center justify-center">
-            <p className="font-Poppin text-[20px] leading-[30px] text-[#000000]">
-              Order Now
-            </p>
-          </div>
+      <div className="flex flex-col md:flex-row items-center justify-between bg-[#FFF9E5] p-4">
+        <Image
+          src={AsguardSofa}
+          alt="Asgaard Sofa"
+          className="w-full max-w-[400px]"
+        />
+        <div className="flex flex-col items-center md:items-start mt-4 md:mt-0 md:ml-6">
+          <p className="font-poppin text-lg">New Arrivals</p>
+          <h1 className="font-poppin text-3xl md:text-4xl">Asgaard Sofa</h1>
+          <button className="border border-black px-4 py-2 mt-4">
+            Order Now
+          </button>
         </div>
       </div>
 
       {/* our-blog */}
 
-      <div className="w-[1440px]  flex flex-col  items-center justify-evenly bg-[#FFFFFF] xs:w-full md:w-full">
-        <div className="w-[479px] h-[91px]">
-          <h1 className="font-Poppin text-[36px] leading-[54px] text-center ">
+      <div className="flex flex-col items-center bg-white p-4">
+        
+          <h1 className="font-poppin text-2xl md:text-3xl text-center ">
             Our Blogs
-            <p className="font-Poppin text-[16px] leading-[24px] text-center text-[#9F9F9F]">
+            <p className="font-poppin text-sm md:text-base text-center text-[#9F9F9F] mt-2">
               Find a bright ideal to suit your taste with our great selection
             </p>
           </h1>
+        
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <div className="flex flex-col items-center gap-2">
+            <Image src={Rectangle13} alt="Blog Image" className="w-full max-w-[300px]"/>
+            
+              <h1 className="font-poppin text-base text-center mt-2">
+                Going all-in with millennial design
+              </h1>
+              <p className="font-poppin text-sm underline text-center">
+                Read More
+              </p>
+              <Image src={Group37} alt="Group37" className="w-full max-w-[200px]" />
+           
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={Rectangle14} alt="Blog Image" className="w-full max-w-[300px]"/>
+            
+              <h1 className="font-poppin text-base text-center mt-2">
+                Going all-in with millennial design
+              </h1>
+              <p className="font-poppin text-sm underline text-center">
+                Read More
+              </p>
+              <Image src={Group37} alt="Group37" className="w-full max-w-[200px]" />
+           
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={Rectangle15} alt="Blog Image" className="w-full max-w-[300px]"/>
+            
+              <h1 className="font-poppin text-base text-center mt-2">
+                Going all-in with millennial design
+              </h1>
+              <p className="font-poppin text-sm underline text-center">
+                Read More
+              </p>
+              <Image src={Group37} alt="Group37" className="w-full max-w-[200px]" />
+           
+          </div>
+
+          
+          
         </div>
-
-        <div className="flex items-center justify-around  mt-[90px] xs:w-full xs:flex-col xs:gap-24 xs:flex-grow-1 md:w-full md:flex-row md:flex-wrap lg:w-full lg:flex-nowrap lg:gap-5">
-          <div className="w-[393px]  flex flex-col  items-center justify-center">
-            <Image src={Rectangle13} alt="Rectangle13" />
-            <div className="w-[339px] h-[129] flex flex-col items-center justify-between gap-[10px]">
-              <h1 className="font-Poppin text-[20px] leading-[30px] text-center text-[#000000]">
-                Going all-in with millennial design
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px] underline text-center">
-                Read More
-              </p>
-              <Image src={Group37} alt="Group37" className="ml-[30px]" />
-            </div>
-          </div>
-
-          <div className="w-[393px] h-[393px] flex flex-col gap-[10px] items-center justify-center">
-            <Image src={Rectangle14} alt="Rectangle13" />
-            <div className="w-[339px] h-[129] flex flex-col items-center justify-between gap-[10px]">
-              <h1 className="font-Poppin text-[20px] leading-[30px] text-center text-[#000000]">
-                Going all-in with millennial design
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px] underline text-center">
-                Read More
-              </p>
-              <Image src={Group37} alt="Group37" className="ml-[30px]" />
-            </div>
-          </div>
-          <div className="w-[393px] h-auto flex flex-col gap-[10px] items-center justify-center">
-            <Image src={Rectangle15} alt="Rectangle13" />
-            <div className="w-[339px] h-[129] flex flex-col items-center justify-between gap-[10px]">
-              <h1 className="font-Poppin text-[20px] leading-[30px] text-center text-[#000000]">
-                Going all-in with millennial design
-              </h1>
-              <p className="font-Poppin text-[24px] leading-[36px] underline text-center">
-                Read More
-              </p>
-              <Image src={Group37} alt="Group37" className="ml-[30px]" />
-            </div>
-          </div>
-        </div>
-
-        <p className="font-Poppin text-[20px] leading-[30px] underline pt-[90px]">
+        <p className="font-Poppin text-[20px] leading-[30px] underline mt-8">
           View All Post
         </p>
       </div>
 
       {/* our instagram */}
-      <div className="w-[1440px] h-[450px] flex items-center justify-center xs:w-full  md:w-full ">
-        <Image
-          src={Imagepng}
-          alt="Imagepng"
-          className="w-[1440] h-[450px] bg-cover bg-center  absolute xs:w-full xs:absolute"
-        />
-        <div className=" flex items-center justify-center flex-col gap-[30px] relative">
-          <h1 className="font-Poppin text-[60px] leading-[90px]">
-            Our Instagram
-          </h1>
-          <p className="font-Poppin text-[20px] leading-[30px]">
-            {" "}
-            Follow our store on Instagram
-          </p>
-          <div className="w-[255px] h-[64px] bg-[#FAF4F480] rounded-full border border-[#FAF4F480] flex items-center justify-center">
-            <p className="font-Poppin text-[20px] leading-[30px] text-[#000000]">
-              Follow Us
-            </p>
-          </div>
-        </div>
-      </div>
-    
+      <div className="flex flex-col items-center justify-center py-16 bg-white px-4">
+  
+  <h1 className="text-4xl font-bold text-black text-center md:text-5xl lg:text-6xl">
+    Our Instagram
+  </h1>
+
+  <p className="mt-4 text-lg text-gray-600 text-center md:text-xl">
+    Follow our store on Instagram
+  </p>
+
+  <div className="mt-8">
+    <button className="px-6 py-3 bg-white shadow-lg rounded-full text-black text-lg font-medium border border-gray-300  md:px-8 md:py-4 md:text-xl">
+      Follow Us
+    </button>
+  </div>
+</div>
+
+
+
+
+      
     </div>
   );
 }
