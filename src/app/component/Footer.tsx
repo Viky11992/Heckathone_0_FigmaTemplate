@@ -2,13 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" pt-[60px]   bg-green-700 ">
+    <div className=" pt-[60px] px-4">
       <div className=" flex items-center  justify-evenly ">
-        <div className="w-full max-w-[25%] xs:hidden lg:flex xs:text-[10px] md:text-base">
+        <div className="w-full text-left max-w-[15%] hidden lg:flex xs:text-[10px] md:text-base">
           400 University Drive Suite 200 Coral Gables, FL 33134 USA
         </div>
-        <div className="w-full max-w-[25%] flex  justify-between">
-          <div className=" flex flex-col gap-[30px] list-none xs:text-[10px] md:text-base font-[500] text-base text-[#000000]">
+        <div className="w-full flex justify-evenly">
+          <div className="w-full max-w-[15%] flex flex-col gap-[30px] list-none xs:text-[20px] md:text-base font-[500] text-base text-[#000000]">
             <li className="font-[500] text-base text-[#9F9F9F] xs:text-[10px] md:text-base">
               links
             </li>
@@ -25,7 +25,7 @@ function Footer() {
               Contact
             </li>
           </div>
-          <div className="w-full max-w-[25%] flex flex-col gap-[30px] list-none font-[500] text-base xs:text-[10px] md:text-base text-[#000000]">
+          <div className="w-full max-w-[25%] flex flex-col gap-[20px] list-none font-[500] text-base xs:text-[10px] md:text-base text-[#000000]">
             <li className="font-[500] text-base text-[#9F9F9F] ">
               Help
             </li>
@@ -39,7 +39,7 @@ function Footer() {
               Privacy Policies
             </li>
           </div>
-          <div className="w-full max-w-[25%] flex flex-col justify-start gap-[10px] ">
+          <div className="w-full max-w-[25%] flex flex-col justify-start  ">
             <p className=" text-[#9F9F9F]">
               Newsletter
             </p>
@@ -54,7 +54,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="font-normal text-base ml-[16%] text-[#000000] xs:text-[10px] md:text-base">
+      <p className="font-normal text-base  text-[#000000] xs:text-[10px] md:text-base">
         2022 Meubel House. All rights reverved
       </p>
     </div>

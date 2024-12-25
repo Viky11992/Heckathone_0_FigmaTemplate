@@ -12,14 +12,14 @@ import Rectangle13 from "../../../public/Rectangle 13.png";
 import Group37 from "../../../public/Group 37.png";
 import Rectangle14 from "../../../public/Rectangle 14 (2).png";
 import Rectangle15 from "../../../public/Rectangle 15 (2).png";
-import Imagepng from "../../../public/Rectangle 17.png";
+
 // w-[1440px] h-[900px]
 function Hero() {
   return (
     <div className="flex flex-col  ">
-      <div className="bg-[#FBEBB5] flex items-center  xs:flex-col xs:justify-around md:flex-row md:justify-evenly">
-        <div className="  bg-green-400">
-          <h1 className="font-poppin text-4xl xs:text-2xl md:text-4xl lg:text-6xl leading-[1.2]">
+      <div className="px-4 bg-[#FBEBB5] flex items-center justify-evenly  xs:flex-col xs:justify-around md:flex-row md:justify-evenly">
+        <div className="">
+          <h1 className="font-poppin text-4xl xs:text-2xl md:text-4xl lg:text-6xl">
             Rocket Single <br /> Seater
           </h1>
           <p className="font-poppin text-lg xs:text-base underline pt-2">
@@ -28,13 +28,13 @@ function Hero() {
         </div>
 
         <div className="flex items-center justify-center xs:w-[70%] md:w-[50%] lg:w-auto">
-          <Image src={Sofa} alt="Sofa" className="w-full " />
+          <Image src={Sofa} alt="Sofa" className="w-full lg:w-[80%]" />
         </div>
       </div>
 
       {/* table element */}
 
-      <div className="flex flex-col md:flex-row justify-around items-center gap-6 bg-[#FAF4F4] p-4">
+      <div className=" flex flex-col md:flex-row justify-around items-center gap-6 bg-[#FAF4F4] p-4">
         <Image src={Group9} alt="Table" className="w-full max-w-[300px]" />
         <Image src={Group8} alt="Table" className="w-full max-w-[300px]" />
       </div>
@@ -100,15 +100,15 @@ function Hero() {
 
       {/* asgaard sofa */}
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-[#FFF9E5] p-4">
+      <div className="flex items-center justify-evenly flex-col-reverse md:flex-row  bg-[#FFF9E5] p-4">
         <Image
           src={AsguardSofa}
           alt="Asgaard Sofa"
-          className="w-full max-w-[400px]"
+          className=""
         />
         <div className="flex flex-col items-center md:items-start mt-4 md:mt-0 md:ml-6">
           <p className="font-poppin text-lg">New Arrivals</p>
-          <h1 className="font-poppin text-3xl md:text-4xl">Asgaard Sofa</h1>
+          <h1 className="font-poppin text-3xl xs:text-2xl md:text-4xl">Asgaard Sofa</h1>
           <button className="border border-black px-4 py-2 mt-4">
             Order Now
           </button>
