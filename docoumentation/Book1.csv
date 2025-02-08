@@ -1,0 +1,5 @@
+test case id,Description,Steps,result,status,remarks
+tc001,Validate product listing, Verify products,verify,ok,no issue
+tc002,Test API error handling,Disconnect API > Refresh page,fallback mssg show,ok,handled
+tc003,Check cart functionality,Add item to cart > Verify cart,cart update,ok,perfect
+tc004,Test responsiveness layout,Resize browser window > Check layout,responsive ok,ok,responsive verified
