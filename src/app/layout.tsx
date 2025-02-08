@@ -1,3 +1,4 @@
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import type { Metadata } from "next";
 import Nevbar from './component/Navbar'
 import Footer from './component/Footer'
@@ -38,16 +39,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en" className={poppin.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
+          <header>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </header>
        
         <Nevbar />
         {children}
-        
         <Footer />
       </body>
     </html>
+    </ClerkProvider>
   );
 }

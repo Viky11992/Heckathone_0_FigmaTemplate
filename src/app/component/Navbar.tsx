@@ -63,7 +63,7 @@ function Navbar() {
         <LiaUserFriendsSolid />
         <IoSearch />
         <FaRegHeart />
-        <MdOutlineShoppingCart />
+        <Link href="/shopping"> <MdOutlineShoppingCart /></Link>
       </div>
     </div>
   );

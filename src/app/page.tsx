@@ -5,10 +5,15 @@ import Home from './Home/page'
 
 
 
-function page() {
+
+ function page() {
+  
+
+  
   return (
     <div className=''>
       <Home />
+      {/* <CustomData/> */}
     </div>
  
       
