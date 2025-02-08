@@ -5,7 +5,7 @@ import SubFooter from "../component/SubFooter";
 import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import { useEffect, useState } from "react";
-import { tparams, tproduct } from "../types";
+import {tproduct } from "../types";
 import { shopQuery } from "@/sanity/lib/query";
 
 import Bg from "../../../public/Rectangle 1.png";
@@ -13,16 +13,16 @@ import Marbel from "../../../public/Meubel House_Logos-05.png";
 import Filter from "../../../public/Vector (4).png";
 
 import { CgMenuGridO } from "react-icons/cg";
-import { currentUser } from "@clerk/nextjs/server";
 
-export default function shopData() {
+
+export default function ShopData() {
   const [data, setdata] = useState<tproduct[]>([]);
   useEffect(() => {
-    async function fetched() {
+    async function Fetched() {
       const fetch: tproduct[] = await client.fetch(shopQuery);
       setdata(fetch);
     }
-    fetched();
+    Fetched();
   }, []);
 
   return (
@@ -54,11 +54,11 @@ export default function shopData() {
         </div>
       </div>
 
-      {/* Main Shop Section */}
+      
       <div className="flex flex-wrap gap-6 px-4 md:px-10 justify-center">
         {data.map((elem) => (
           <div key={elem.id} className="flex flex-col gap-4 border border-black p-4 rounded-xl w-full sm:w-60 md:w-72 lg:w-80">
-            <Link className="flex flex-col gap-4" href={`product/${elem.slug}`}>
+            <Link className="flex flex-col gap-4" href={`Product/${elem.slug}`}>
               <h1 className="text-sm font-semibold text-purple-700">{elem.name}</h1>
               <Image src={elem.image} alt={elem.name} height={300} width={300} className="h-64 w-full object-cover rounded-md hover:p-2" />
               <h1 className="text-base font-medium">Rs-{elem.price}</h1>

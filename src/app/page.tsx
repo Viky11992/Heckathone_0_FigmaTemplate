@@ -1,4 +1,3 @@
-import React from 'react'
 import Home from './Home/page'
 
 
@@ -6,14 +5,13 @@ import Home from './Home/page'
 
 
 
- function page() {
+ function Page() {
   
 
   
   return (
     <div className=''>
       <Home />
-      {/* <CustomData/> */}
     </div>
  
       
@@ -22,4 +20,4 @@ import Home from './Home/page'
   )
 }
 
-export default page
+export default Page

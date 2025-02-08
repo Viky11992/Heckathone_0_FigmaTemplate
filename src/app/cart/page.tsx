@@ -41,8 +41,8 @@ function Page() {
   };
 
   const deleteItem = (productId: number) => {
-    let cart = JSON.parse(localStorage.getItem("cart") || "[]");
-    const updatedCart = cart.filter((product: any) => product.id !== productId);
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const updatedCart = cart.filter((product:tproduct) => product.id !== productId);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     setProducts(updatedCart);
   };

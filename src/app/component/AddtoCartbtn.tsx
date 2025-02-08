@@ -3,7 +3,7 @@ import { CiSquareRemove } from "react-icons/ci";
 import React from "react";
 import Image from "next/image";
 import { tproduct } from "../types"; // Assuming tproduct is properly defined
-import { useClerk, useUser } from "@clerk/nextjs";
+
 
 // Component definition
 function AddtoCartbtn({ productdata }: { productdata: tproduct[] }) {

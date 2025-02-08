@@ -12,11 +12,3 @@ export interface tproduct{
 
 
 }
-
-
-export interface tparams{
-    params:{
-        slug:string
-
-    }
-}
